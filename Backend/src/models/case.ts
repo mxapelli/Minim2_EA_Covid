@@ -9,7 +9,7 @@ export interface ICase extends Document {
     email: string;
     phone: string;
     address: string;
-    class: string;
+    clasi: string;
 }
 
 const caseSchema = new Schema({
@@ -21,7 +21,7 @@ const caseSchema = new Schema({
     email: {type: String},
     phone: {type: String},
     address: {type: String},
-    class: {type: String}
+    clasi: {type: String}
 })
 
 export default model<ICase>("Case", caseSchema, "cases");

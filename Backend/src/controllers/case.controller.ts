@@ -22,7 +22,7 @@ const postCases = async (req: Request, res: Response) => {
         email: req.body.email,
         phone: req.body.phone,
         address: req.body.address,
-        class: req.body.class
+        clasi: req.body.class
     })
     console.log(req.body);
     newCase.save().then((data) => {
@@ -45,7 +45,7 @@ const updateCase= async (req: Request, res: Response) => {
                 email: req.body.email,
                 phone: req.body.phone,
                 address: req.body.address,
-                class: req.body.class
+                clasi: req.body.class
             }
         }
     ).then((data) => {
