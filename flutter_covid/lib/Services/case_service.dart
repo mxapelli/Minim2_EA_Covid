@@ -4,7 +4,7 @@ import '../Models/case.dart';
 import 'package:jwt_decode/jwt_decode.dart';
 import 'shared_preferences.dart';
 
-Future<List<Case>> getProjectsAndOwners() async {
+Future<List<Case>> getCases() async {
   List<Case> cases = [];
   String token;
   try {

@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import "../Models/case.dart";
 import '../styles.dart';
 import 'case_detail.dart';
+import '../Services/case_service.dart';
 
 class CasesList extends StatelessWidget {
-  final List<Case> cases;
-
-  CasesList(this.cases);
+  Future<List<Case>> cases;
 
   @override
   Widget build(BuildContext context) {
